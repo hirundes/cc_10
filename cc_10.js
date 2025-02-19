@@ -47,3 +47,25 @@ order1.getOrderDetails();
 // Expected output: "Order ID: 501, Product: Laptop, Quantity: 2, Total Price: $2400"
 prod1.updateStock(2); 
 // Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 5" (Stock reduced)
+
+
+//Task 3 - Created Inventory Class
+class Inventory {     //CREATING INVENTORY CLASS
+    constructor() {
+        this.products = [];     //ADDING PROPERTY PRODUCTS
+   };
+
+   addProduct(products) {       //ADDING METHOD addProducts(product) TO ADD A NEW PRODUCT TO INVENTORY
+    this.products.push(products);
+   }
+
+   listProducts() {             //ADDING METHOD listProducts() TO LOG ALL PRODUCTS' DETAILS
+    this.products.forEach(product => console.log(product));
+   }
+};
+
+console.log("---Task 3---")     //LOGGING "Task 3", AND DECLARING INVENTORY, AND LOGGIN add.Products(prod1) AND list.Products
+const inventory = new Inventory();
+inventory.addProduct(prod1);
+inventory.listProducts();
+// Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 5"
