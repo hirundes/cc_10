@@ -103,6 +103,7 @@ console.log(prod1.getDetails());
 // Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 3" 
 
 
+
 //Task 5 - Implemented Product Restocking
 console.log("---Task 5---")     //LOGGING "Task 5" AND restockProduct, prod1.getDetails()
 inventory.restockProduct(101, 5);
