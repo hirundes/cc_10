@@ -41,7 +41,7 @@ class Order {       //CREATE CLASS ORDER WITH PROPERTIES ORDEID, PRODUCT, QUANTI
     };
 
 getOrderDetails() {     //ADD METHOD getOrderDetails() THAT RETURNS ORDER DETAILS
-    return `Order ID: ${this.orderId}, Product: ${this.product}, Quantity: ${this.quantity}, Total Price: $${this.quantity * this.product.price}`
+    return `Order ID: ${this.orderId}, Product: ${this.product.name}, Quantity: ${this.quantity}, Total Price: $${this.quantity * this.product.price}`
 };
 };
 
