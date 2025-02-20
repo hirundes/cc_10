@@ -50,6 +50,7 @@ const order1 = new Order(501, prod1, 2);
 console.log(order1.getOrderDetails()); 
 // Expected output: "Order ID: 501, Product: Laptop, Quantity: 2, Total Price: $2400"
 
+prod1.updateStock(2);
 console.log(prod1.getDetails()); 
 // Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 5" (Stock reduced)
 
@@ -82,8 +83,7 @@ class Inventory {     //CREATING INVENTORY CLASS
         const product = this.products.find(prod => prod.id === productId);
         if (product) {
             product.stock += quantity;
-            console.log("Restocked"); } 
-            else console.log("Product was not found")
+        };
     };
 };
 
